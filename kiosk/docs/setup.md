@@ -43,17 +43,60 @@ Note that loading in the OSM dataset may take a few minutes to complete. If you 
 
 ## Modify osm-bright.mml PostGIS datasource
 
-TODO: Change PostGIS configuration info for your new database.
+Now that the data have been loaded into  PostGIS, you will need to point the cascadenik style file, 'osm-bright.mml' to the your local PostGIS instance.
 
-## Convert Cascadenik mml to Mapnik XML
+Start by opening 'osm-bright.mml' in any text editing program. I will be using vim in this example.
+
+	# Navigate to the osm-bright folder
+	# and edit osm-bright.mml
+	cd ../kiosk/osm-bright/
+	vim osm-bright.mml
+
+Begining on line 44, modify any of the connection parameters to match your local PostGIS instance. The likely parameters you will need to change are, 'user', 'password', and 'dbname' if you loaded your data into a database other then 'haiti'.
+
+	 <!-- Database settings -->
+ 	 <!-- Modify to match your local database settings -->
+ 	 <!ENTITY db_info '<Parameter name="type">postgis</Parameter>
+        	<Parameter name="password">gis</Parameter>
+		<Parameter name="host">localhost</Parameter>
+        	<Parameter name="port">5432</Parameter>
+		<Parameter name="user">postgres</Parameter>
+		<Parameter name="dbname">haiti</Parameter>
+		<Parameter name="estimate_extent">false</Parameter>
+		<Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
+		<Parameter name="geometry_field">way</Parameter>
+		<Parameter name="srid">900913</Parameter>'>
+
+Save any changes to osm-bright.mml and exit your text editor.
+
+## Adding Custom Fonts to Mapnik
 
 The [osm-bright](https://github.com/developmentseed/mapbox/tree/master/osm-bright/) style developed by AJ Ashton is used as a basemap for the kiosk style. Before data are rendered using this style, custom fonts must be installed and registered with mapnik. Specifically, 'Arial Regular' and 'Arial Bold' are required.
 
-In addition to the notes below, detailed instructions can be found on the (here)[http://trac.mapnik.org/wiki/UsingCustomFonts].
+The notes below have been adapted from detailed instructions on the (Mapnik wiki)[http://trac.mapnik.org/wiki/UsingCustomFonts].
 
-TODO: Check if fonts exist in mapnik font collection path
-TODO: Download msstcorefonts if not.
-TODO: Register fonts with mapnik and re-check
+First, check if the Arial Bold and Arial Regular faces are already registered with Mapnik2. Why Mapnik2 and not Mapnik? because we will be rendering our images using Mapnik2. You can easily use these same steps with Mapnik 0.7.x however, just substitute 'mapnik2' with 'mapnik'.
+
+	# List fonts registered with mapnik2
+	python -c "from mapnik2 import FontEngine as e; print '\n'.join(e.instance().face_names())"
+
+The command above will return all fonts registered with mapnik2. If you do not see Arial Regular or Arial Bold, you will need to install them. Arial truetype fonts have been provided in the following directory '/styles/kiosk/osm-bright/fonts'. These fonts have been taken from the msttcorefonts package. If you want to download the fonts from their source, or have access to other Microsoft fonts, read (this tutorial)[http://embraceubuntu.com/2005/09/09/installing-microsoft-fonts/].
+
+For the purpose of this tutorial, we will copy the contents of the 'fonts' folder to Mapnik2's FontCollectionPath.
+
+	# Navigate to the fonts folder
+	cd fonts
+	# Identify where Mapnik2 stores its fonts
+	python -c "import mapnik2; print mapnik2.fontscollectionpath"
+	# Example output: /usr/local/lib/mapnik2/fonts
+	# Copy arial fonts to the directory identified above
+	cp * /usr/local/lib/mapnik2/fonts
+	# Re-check fonts registered with Mapnik2
+	python -c "from mapnik2 import FontEngine as e; print '\n'.join(e.instance().facenames()
+
+The output list should now contain Arial Bold and Arial Regular
+
+## Convert Cascadenik MML to Mapnik XML
 
 	casecadenik-compile.py osm-bright.mml osm-bright_mapnik07x.xml
 

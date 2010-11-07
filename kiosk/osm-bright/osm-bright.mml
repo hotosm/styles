@@ -40,17 +40,17 @@
   <!ENTITY srs4326 '+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs'>
 
   <!-- Database settings -->
-  <!-- MK MOD for testing locally -->
+  <!-- Modify to match your local database settings -->
   <!ENTITY db_info '<Parameter name="type">postgis</Parameter>
-<Parameter name="password">gis</Parameter>
-<Parameter name="host">localhost</Parameter>
-<Parameter name="port">5432</Parameter>
-<Parameter name="user">postgres</Parameter>
-<Parameter name="dbname">haiti2</Parameter>
-<Parameter name="estimate_extent">false</Parameter>
-<Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
-<Parameter name="geometry_field">way</Parameter>
-<Parameter name="srid">900913</Parameter>'>
+	<Parameter name="password">gis</Parameter>
+	<Parameter name="host">localhost</Parameter>
+	<Parameter name="port">5432</Parameter>
+	<Parameter name="user">postgres</Parameter>
+	<Parameter name="dbname">haiti</Parameter>
+	<Parameter name="estimate_extent">false</Parameter>
+	<Parameter name="extent">-20037508,-19929239,20037508,19929239</Parameter>
+	<Parameter name="geometry_field">way</Parameter>
+	<Parameter name="srid">900913</Parameter>'>
 
 ]>
 
