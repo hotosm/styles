@@ -73,14 +73,14 @@ Save any changes to osm-bright.mml and exit your text editor.
 
 The [osm-bright](https://github.com/developmentseed/mapbox/tree/master/osm-bright/) style developed by AJ Ashton is used as a basemap for the kiosk style. Before data are rendered using this style, custom fonts must be installed and registered with mapnik. Specifically, 'Arial Regular' and 'Arial Bold' are required.
 
-The notes below have been adapted from detailed instructions on the (Mapnik wiki)[http://trac.mapnik.org/wiki/UsingCustomFonts].
+The notes below have been adapted from detailed instructions on the [Mapnik wiki](http://trac.mapnik.org/wiki/UsingCustomFonts).
 
 First, check if the Arial Bold and Arial Regular faces are already registered with Mapnik2. Why Mapnik2 and not Mapnik? because we will be rendering our images using Mapnik2. You can easily use these same steps with Mapnik 0.7.x however, just substitute 'mapnik2' with 'mapnik'.
 
 	# List fonts registered with mapnik2
 	python -c "from mapnik2 import FontEngine as e; print '\n'.join(e.instance().face_names())"
 
-The command above will return all fonts registered with mapnik2. If you do not see Arial Regular or Arial Bold, you will need to install them. Arial truetype fonts have been provided in the following directory '/styles/kiosk/osm-bright/fonts'. These fonts have been taken from the msttcorefonts package. If you want to download the fonts from their source, or have access to other Microsoft fonts, read (this tutorial)[http://embraceubuntu.com/2005/09/09/installing-microsoft-fonts/].
+The command above will return all fonts registered with mapnik2. If you do not see Arial Regular or Arial Bold, you will need to install them. Arial truetype fonts have been provided in the following directory '/styles/kiosk/osm-bright/fonts'. These fonts have been taken from the msttcorefonts package. If you want to download the fonts from their source, or have access to other Microsoft fonts, read [this tutorial](http://embraceubuntu.com/2005/09/09/installing-microsoft-fonts/).
 
 For the purpose of this tutorial, we will copy the contents of the 'fonts' folder to Mapnik2's FontCollectionPath.
 
