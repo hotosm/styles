@@ -4,7 +4,7 @@ These instructions will illustrate the steps required to
 successfully render custom Humanitarian OpenStreetMap Team styles.
 
 This guide assumes that a user has postgis installed and running on
-a linux environment. A good guide for getting to this point can
+a linux environment. Addtionally, osm2pgsql, mapnik2, cascadenik, nik2img are also assumed to be installed. A good guide for getting to this point can
 be found at [dbsgeo.com](http://dbsgeo.com/foss4g2010/html/)
 
 ## Data Download
@@ -41,15 +41,21 @@ Next, use osm2pgsql to import the geofabrik osm extract, 'latest.osm.bz2' into t
 
 Note that loading in the OSM dataset may take a few minutes to complete. If you are unable to download the geofabrik export, a sample dataset 'sector_4.osm' is provided for use.
 
-TODO: Use modified default.style file to load haiti extract into PostGIS
+## Modify osm-bright.mml PostGIS datasource
+
+TODO: Change PostGIS configuration info for your new database.
 
 ## Convert Cascadenik mml to Mapnik XML
 
-NOTE: Review adding custom fonts required for osm-bright
-On Ubuntu: msttcorefonts (arial regular, arial bold)
-See [http://trac.mapnik.org/wiki/UsingCustomFonts](http://trac.mapnik.org/wiki/UsingCustomFonts) for additional information.
+The [osm-bright](https://github.com/developmentseed/mapbox/tree/master/osm-bright/) style developed by AJ Ashton is used as a basemap for the kiosk style. Before data are rendered using this style, custom fonts must be installed and registered with mapnik. Specifically, 'Arial Regular' and 'Arial Bold' are required.
 
-	cascadenik-compile.py osm-bright.mml osm-bright_mapnik07x.xml
+In addition to the notes below, detailed instructions can be found on the (here)[http://trac.mapnik.org/wiki/UsingCustomFonts].
+
+TODO: Check if fonts exist in mapnik font collection path
+TODO: Download msstcorefonts if not.
+TODO: Register fonts with mapnik and re-check
+
+	casecadenik-compile.py osm-bright.mml osm-bright_mapnik07x.xml
 
 ## Upgrade Mapnik XML to Mapnik2 XML
 
