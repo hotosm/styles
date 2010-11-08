@@ -94,29 +94,78 @@ For the purpose of this tutorial, we will copy the contents of the 'fonts' folde
 	# Re-check fonts registered with Mapnik2
 	python -c "from mapnik2 import FontEngine as e; print '\n'.join(e.instance().facenames()
 
-The output list should now contain Arial Bold and Arial Regular
+The output list should now contain Arial Bold and Arial Regular.
 
 ## Convert Cascadenik MML to Mapnik XML
 
-	casecadenik-compile.py osm-bright.mml osm-bright_mapnik07x.xml
+Now that the pre-requisite fonts are installed installed, osm-bright.mml can be converted from the cascadenik format to a mapnik 0.7.x file. A copy of this file will then be converted from mapnik 0.7.x syntax to mapnik2 syntax.
 
-## Upgrade Mapnik XML to Mapnik2 XML
-
+	# Drop back to the osm-bright folder
+	cd ../
+	# Convert osm-bright.mml to a mapnik 0.7.x XML file
+	cascadenik-compile.py osm-bright.mml osm-bright_mapnik07x.xml
+	# Upgrade Mapnik XML to Mapnik2 XML
 	upgrade_map_xml.py osm-bright_mapnik07x.xml osm-bright_mapnik2.xml
+
+## Render an image of the data using nik2img
+
+	# Use nik2img.py to generate a PNG image from the mapnik2 stylesheet.
+	# Note we're setting the center and zoom for Haiti.
+	nik2img.py -c -72.252 18.6552 -z 18 osm-bright_mapnik2.xml test_image.png
 
 ## Download Support Files from Source
 
-TODO: Provide instructions on downloading processed_p.shp and builtup_areas.shp
 TODO: Provide instructions for downloading SJJB-Icons
 
-Download them
+If you are interested in using this style for an area outside of Haiti, or the included shapefiles in the 'shp' folder are not functioning, you can grab them from the source.
 
+Note: See [this](http://dbsgeo.com/foss4g2010/html/getting_stylish.html#getting-stylish) tutorial for full instructions.
+
+	# Navigate to shp folder
+	cd path/to/styles/shp
+
+	# Download Them
 	wget http://tile.openstreetmap.org/processed_p.tar.bz2
 	wget wget http://tile.openstreetmap.org/world_boundaries-spherical.tgz
 
-Extract them
-
+	# Extract them
 	tar xzf world_boundaries-spherical.tgz
-	tar xjf processed_p.tar..bz2 -C world_boundaries
+	tar xjf processed_p.tar.bz2
 
-Point your cascadenik mml at them
+	#Index them
+	shapeindex processed_p
+	shapeindex builtup_area
+
+Now that they have been downloaded, point your cascadenik mml file at them
+
+	# Navigate to osm-bright.mml
+	cd ../kiosk/osm-bright/
+
+	# Edit osm-bright.mml
+	vim osm-bright.mml
+
+You will need to modify the file path parameters for both the 'land' and 'builtup' layer in osm-bright.mml. These begin on line 74 of the document.
+
+	<!-- == Areas ============================================================ -->
+	<!-- If using different shapefiles, modify path here -->
+ 	<Layer class="land" srs="&srs900913;" status="on">
+	   <Datasource>
+	      <Parameter name="file">../../shp/processed_p_extract</Parameter>
+	      <Parameter name="type">shape</Parameter>
+	   </Datasource>
+	</Layer>
+	<!-- If using different shapefiles, modify path here -->
+	<Layer class="builtup" srs="&srsMerc;" status="off">
+	   <Datasource>
+	      <Parameter name="file">../../shp/builtup_area_extract</Parameter>
+	      <Parameter name="type">shape</Parameter>
+	   </Datasource>
+	</Layer>
+
+## Download Custom Icons
+
+The majority of the icons used in this style are from the SJJB Icon set.
+
+These icons are maintained by Brian Quinian, and many of them are derived from the National Parks Service.
+
+To download the SJJB icon set, visit his page: [http://www.sjjb.co.uk/mapicons/downloads](http://www.sjjb.co.uk/mapicons/downloads)

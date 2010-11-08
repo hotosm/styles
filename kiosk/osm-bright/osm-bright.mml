@@ -71,14 +71,14 @@
   <Stylesheet src='iom_points.mss' /> <!-- MK Mod for IOM Point Features -->
 
   <!-- == Areas ============================================================ -->
-  <!-- MK MOD for filepath -->
+  <!-- If using different shapefiles, modify path here -->
   <Layer class="land" srs="&srs900913;" status="on">
     <Datasource>
       <Parameter name="file">../../shp/processed_p_extract</Parameter>
       <Parameter name="type">shape</Parameter>
     </Datasource>
   </Layer>
-  <!-- MK MOD for filepath -->
+  <!-- If using different shapefiles, modify path here -->
   <Layer class="builtup" srs="&srsMerc;" status="off">
     <Datasource>
       <Parameter name="file">../../shp/builtup_area_extract</Parameter>
