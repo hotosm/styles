@@ -115,8 +115,6 @@ Now that the pre-requisite fonts are installed installed, osm-bright.mml can be 
 
 ## Download Support Files from Source
 
-TODO: Provide instructions for downloading SJJB-Icons
-
 If you are interested in using this style for an area outside of Haiti, or the included shapefiles in the 'shp' folder are not functioning, you can grab them from the source.
 
 Note: See [this](http://dbsgeo.com/foss4g2010/html/getting_stylish.html#getting-stylish) tutorial for full instructions.
