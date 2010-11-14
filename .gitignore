@@ -5,3 +5,7 @@
 
 # geofabrik extract #
 latest.osm.bz2
+
+# compiled mapnik stylesheets #
+osm-bright07x.xml
+osm-bright2.xml
