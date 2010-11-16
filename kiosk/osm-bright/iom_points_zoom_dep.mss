@@ -21,9 +21,9 @@
 .iom.amenity[zoom>=13][zoom<=14][amenity=cinema]{ point-file: url(./sjjb_png/tourist_cinema2.p.12.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=13][zoom<=14][amenity=drinking_water]{ point-file: url(./sjjb_png/food_drinkingtap.n.12.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=13][zoom<=14][amenity=doctors]{ point-file: url(./sjjb_png/health_hospital.p.12.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][zoom<=19][amenity=place_of_worship]{ point-file: url(./sjjb_png/place_of_worship_unknown.p.12.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=13][zoom<=14][amenity=place_of_worship]{ point-file: url(./sjjb_png/place_of_worship_unknown.p.12.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=13][zoom<=14][amenity=restaurant]{ point-file: url(./sjjb_png/food_restaurant.p.12.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][zoom<=19][amenity=shower]{ point-file: url(./sjjb_png/shower.n.12.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=13][zoom<=14][amenity=shower]{ point-file: url(./sjjb_png/shower.n.12.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=13][zoom<=14][amenity=toilets]{ point-file: url(./sjjb_png/amenity_toilets.n.12.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=13][zoom<=14][amenity=waste_basket]{ point-file: url(./sjjb_png/amenity_waste_bin.n.12.png); point-allow-overlap: true; }
 
@@ -44,9 +44,9 @@
 .iom.amenity[zoom>=15][zoom<=16][amenity=cinema]{ point-file: url(./sjjb_png/tourist_cinema2.p.16.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=15][zoom<=16][amenity=drinking_water]{ point-file: url(./sjjb_png/food_drinkingtap.n.16.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=15][zoom<=16][amenity=doctors]{ point-file: url(./sjjb_png/health_hospital.p.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=15][zoom<=16][zoom<=19][amenity=place_of_worship]{ point-file: url(./sjjb_png/place_of_worship_unknown.p.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=place_of_worship]{ point-file: url(./sjjb_png/place_of_worship_unknown.p.16.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=15][zoom<=16][amenity=restaurant]{ point-file: url(./sjjb_png/food_restaurant.p.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=15][zoom<=16][zoom<=19][amenity=shower]{ point-file: url(./sjjb_png/shower.n.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=shower]{ point-file: url(./sjjb_png/shower.n.16.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=15][zoom<=16][amenity=toilets]{ point-file: url(./sjjb_png/amenity_toilets.n.16.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=15][zoom<=16][amenity=waste_basket]{ point-file: url(./sjjb_png/amenity_waste_bin.n.16.png); point-allow-overlap: true; }
 
@@ -67,9 +67,9 @@
 .iom.amenity[zoom>=17][amenity=cinema]{ point-file: url(./sjjb_png/tourist_cinema2.p.20.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=17][amenity=drinking_water]{ point-file: url(./sjjb_png/food_drinkingtap.n.20.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=17][amenity=doctors]{ point-file: url(./sjjb_png/health_hospital.p.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=17][zoom<=19][amenity=place_of_worship]{ point-file: url(./sjjb_png/place_of_worship_unknown.p.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=place_of_worship]{ point-file: url(./sjjb_png/place_of_worship_unknown.p.20.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=17][amenity=restaurant]{ point-file: url(./sjjb_png/food_restaurant.p.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=17][zoom<=19][amenity=shower]{ point-file: url(./sjjb_png/shower.n.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=shower]{ point-file: url(./sjjb_png/shower.n.20.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=17][amenity=toilets]{ point-file: url(./sjjb_png/amenity_toilets.n.20.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=17][amenity=waste_basket]{ point-file: url(./sjjb_png/amenity_waste_bin.n.20.png); point-allow-overlap: true; }
 
