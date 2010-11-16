@@ -68,7 +68,7 @@
   <Stylesheet src='place-label.mss' />  <!-- Admin-names, cities, towns, etc -->
   <Stylesheet src='road-label.mss' />   <!-- route labels -->
   <Stylesheet src='poi.mss' />          <!-- Points of interest, amenities, etc -->
-  <Stylesheet src='iom_points.mss' /> <!-- MK Mod for IOM Point Features -->
+  <Stylesheet src='iom_points_zoom_dep.mss' /> <!-- MK Mod for IOM Point Features -->
 
   <!-- == Areas ============================================================ -->
   <!-- If using different shapefiles, modify path here -->
