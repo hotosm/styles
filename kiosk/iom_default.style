@@ -60,6 +60,7 @@ node,way attribute_source_name                     text  #osm2pgsql style
 node,way attribute_source_type                     text  #osm2pgsql style
 node,way average_waiting_time                      text  #osm2pgsql style
 node,way barrier                                   text    linear  #osm2pgsql style
+node,way barrier:obstacle_type                     text  #Added November 10 2010
 node,way bicycle                                   text    nocache  #osm2pgsql style
 node,way block                                     text  #osm2pgsql style
 node,way boundary                                  text  #osm2pgsql style
@@ -96,6 +97,7 @@ node,way healthFacilityCapacityBeds                text  #osm2pgsql style
 node,way healthFacilityCapacityDescription         text  #osm2pgsql style
 node,way healthFacilityServiceDescription          text  #osm2pgsql style
 node,way health_facility_constructio_Description   text  #osm2pgsql style
+node,way hfac_type                                 text  #added November 18 2010
 node,way highway                                   text    linear  #osm2pgsql style
 node,way historic                                  text    polygon  #osm2pgsql style
 node,way horse                                     text    linear  #osm2pgsql style
