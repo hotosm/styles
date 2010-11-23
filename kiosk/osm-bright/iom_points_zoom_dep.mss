@@ -26,7 +26,6 @@
 .iom.amenity[zoom>=13][zoom<=14][amenity=shower]{ point-file: url(./icons/shower.n.12.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=13][zoom<=14][amenity=toilets]{ point-file: url(./icons/amenity_toilets.n.12.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=13][zoom<=14][amenity=waste_basket]{ point-file: url(./icons/amenity_waste_bin.n.12.png); point-allow-overlap: true; }
-/* New - Add Icons */
 .iom.amenity[zoom>=13][zoom<=14][amenity=school]{ point-file: url(./icons/education_school.p.12.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=13][zoom<=14][amenity=hospital]{ point-file: url(./icons/health_hospital.p.12.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=13][zoom<=14][amenity=fountain]{ point-file: url(./icons/amenity_fountain.p.12.png); point-allow-overlap: true; }
@@ -71,7 +70,7 @@
 .iom.man_made[zoom>=13][zoom<=14][man_made=bladder]{ point-file: url(./icons/blank.n.12.png); point-allow-overlap: true; }
 .iom.man_made[zoom>=13][zoom<=14][man_made=water_well]{ point-file: url(./icons/watsan_well.12.png); point-allow-overlap: true; }
 .iom.man_made[zoom>=13][zoom<=14][man_made=borehole]{ point-file: url(./icons/watsan_borehole.12.png); point-allow-overlap: true; }
-.iom.man_made[zoom>=13][zoom<=14][man_made=dyke]{ point-file: url(./icons/blank.n.12.png); point-allow-overlap: true; }
+.iom.man_made[zoom>=13][zoom<=14][man_made=dyke]{ point-file: url(./icons/transport_weir.p.12.png); point-allow-overlap: true; }
 
 /* IOM Natural - Low Zoom */
 .iom.natural[zoom>=13][zoom<=14][natural=spring]{ point-file: url(./icons/watsan_spring.12.png); point-allow-overlap: true; }
@@ -101,58 +100,57 @@
 .iom.amenity[zoom>=15][zoom<=16][amenity=shower]{ point-file: url(./icons/shower.n.16.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=15][zoom<=16][amenity=toilets]{ point-file: url(./icons/amenity_toilets.n.16.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=15][zoom<=16][amenity=waste_basket]{ point-file: url(./icons/amenity_waste_bin.n.16.png); point-allow-overlap: true; }
-/* New - Add Icons */
-.iom.amenity[zoom>=13][zoom<=14][amenity=school]{ point-file: url(./icons/education_school.p.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=hospital]{ point-file: url(./icons/health_hospital.p.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=fountain]{ point-file: url(./icons/amenity_fountain.p.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=tap]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=handwashing_station]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=waste_disposal]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=community_centre]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=social_centre]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=community_information_kiosk]{ point-file: url(./icons/info_kiosk.n.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=market]{ point-file: url(./icons/shopping_supermarket.p.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=street_light]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=shelter]{ point-file: url(./icons/accommodation_shelter.p.16.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=communal_cooking_area]{ point-file: url(./icons/communal_cooking.n.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=school]{ point-file: url(./icons/education_school.p.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=hospital]{ point-file: url(./icons/health_hospital.p.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=fountain]{ point-file: url(./icons/amenity_fountain.p.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=tap]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=handwashing_station]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=waste_disposal]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=community_centre]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=social_centre]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=community_information_kiosk]{ point-file: url(./icons/info_kiosk.n.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=market]{ point-file: url(./icons/shopping_supermarket.p.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=street_light]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=shelter]{ point-file: url(./icons/accommodation_shelter.p.16.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=15][zoom<=16][amenity=communal_cooking_area]{ point-file: url(./icons/communal_cooking.n.16.png); point-allow-overlap: true; }
 
-/* IOM - Barrier Low Zoom */
-.iom.barrier[zoom>=13][zoom<=14][barrier=ditch]{ point-file: url(./icons/barrier_ditch.p.16.png); point-allow-overlap: true; }
+/* IOM - Barrier Medium Zoom */
+.iom.barrier[zoom>=15][zoom<=16][barrier=ditch]{ point-file: url(./icons/barrier_ditch.p.16.png); point-allow-overlap: true; }
 
-/* IOM - Hfac_Type Low Zoom */
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=specialized_hospital]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=hospital]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=field_hospital]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=clinic]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=cs_health_center]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=cal_health_center_with_beds]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=csl_health_center_without_beds]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=dispensary]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=other_type_of_health_facility]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=unspecified]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
+/* IOM - Hfac_Type Medium Zoom */
+.iom.hfac_type[zoom>=15][zoom<=16][hfac_type=specialized_hospital]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=15][zoom<=16][hfac_type=hospital]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=15][zoom<=16][hfac_type=field_hospital]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=15][zoom<=16][hfac_type=clinic]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=15][zoom<=16][hfac_type=cs_health_center]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=15][zoom<=16][hfac_type=cal_health_center_with_beds]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=15][zoom<=16][hfac_type=csl_health_center_without_beds]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=15][zoom<=16][hfac_type=dispensary]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=15][zoom<=16][hfac_type=other_type_of_health_facility]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=15][zoom<=16][hfac_type=unspecified]{ point-file: url(./icons/health_hospital_emergency2.p.16.png); point-allow-overlap: true; }
 
-/* IOM Humanitarian Use - Low Zoom */
-.iom.humanitarian_use[zoom>=13][zoom<=14][humanitarian_use=oral_rehydration_centre]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
-.iom.humanitarian_use[zoom>=13][zoom<=14][humanitarian_use=cholera_treatement_unit]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
-.iom.humanitarian_use[zoom>=13][zoom<=14][humanitarian_use=cholera_treatement_centre]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
-.iom.humanitarian_use[zoom>=13][zoom<=14][humanitarian_use=disaster_shelter]{ point-file: url(./icons/accommodation_shelter.p.16.png); point-allow-overlap: true; }
+/* IOM Humanitarian Use - Medium Zoom */
+.iom.humanitarian_use[zoom>=15][zoom<=16][humanitarian_use=oral_rehydration_centre]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+.iom.humanitarian_use[zoom>=15][zoom<=16][humanitarian_use=cholera_treatement_unit]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+.iom.humanitarian_use[zoom>=15][zoom<=16][humanitarian_use=cholera_treatement_centre]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+.iom.humanitarian_use[zoom>=15][zoom<=16][humanitarian_use=disaster_shelter]{ point-file: url(./icons/accommodation_shelter.p.16.png); point-allow-overlap: true; }
 
-/* IOM Landuse - Low Zoom */
-.iom.landuse[zoom>=13][zoom<=14][landuse=landfill]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
-.iom.landuse[zoom>=13][zoom<=14][landuse=emergency_evacuation_area]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+/* IOM Landuse - Medium Zoom */
+.iom.landuse[zoom>=15][zoom<=16][landuse=landfill]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+.iom.landuse[zoom>=15][zoom<=16][landuse=emergency_evacuation_area]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
 
-/* IOM Man_made - Low Zoom */
-.iom.man_made[zoom>=13][zoom<=14][man_made=tank]{ point-file: url(./icons/watsan_tank.16.png); point-allow-overlap: true; }
-.iom.man_made[zoom>=13][zoom<=14][man_made=bladder]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
-.iom.man_made[zoom>=13][zoom<=14][man_made=water_well]{ point-file: url(./icons/watsan_well.16.png); point-allow-overlap: true; }
-.iom.man_made[zoom>=13][zoom<=14][man_made=borehole]{ point-file: url(./icons/watsan_borehole.16.png); point-allow-overlap: true; }
-.iom.man_made[zoom>=13][zoom<=14][man_made=dyke]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+/* IOM Man_made - Medium Zoom */
+.iom.man_made[zoom>=15][zoom<=16][man_made=tank]{ point-file: url(./icons/watsan_tank.16.png); point-allow-overlap: true; }
+.iom.man_made[zoom>=15][zoom<=16][man_made=bladder]{ point-file: url(./icons/blank.n.16.png); point-allow-overlap: true; }
+.iom.man_made[zoom>=15][zoom<=16][man_made=water_well]{ point-file: url(./icons/watsan_well.16.png); point-allow-overlap: true; }
+.iom.man_made[zoom>=15][zoom<=16][man_made=borehole]{ point-file: url(./icons/watsan_borehole.16.png); point-allow-overlap: true; }
+.iom.man_made[zoom>=15][zoom<=16][man_made=dyke]{ point-file: url(./icons/transport_weir.p.16.png); point-allow-overlap: true; }
 
-/* IOM Natural - Low Zoom */
-.iom.natural[zoom>=13][zoom<=14][natural=spring]{ point-file: url(./icons/watsan_spring.16.png); point-allow-overlap: true; }
+/* IOM Natural - Medium Zoom */
+.iom.natural[zoom>=15][zoom<=16][natural=spring]{ point-file: url(./icons/watsan_spring.16.png); point-allow-overlap: true; }
 
-/* IOM Office - Low Zoom */
-.iom.office[zoom>=13][zoom<=14][office=camp_resident_committee]{ point-file: url(./icons/camp_resident_committee.p.16.png); point-allow-overlap: true; }
+/* IOM Office - Medium Zoom */
+.iom.office[zoom>=15][zoom<=16][office=camp_resident_committee]{ point-file: url(./icons/camp_resident_committee.p.16.png); point-allow-overlap: true; }
 
 /* IOM - Shop Medium Zoom */
 .iom.shop[zoom>=15][zoom<=16][amenity=shop][shop=convenience]{ point-file: url(./icons/shopping_convenience.p.16.png); point-allow-overlap: true; }
@@ -176,58 +174,57 @@
 .iom.amenity[zoom>=17][amenity=shower]{ point-file: url(./icons/shower.n.20.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=17][amenity=toilets]{ point-file: url(./icons/amenity_toilets.n.20.png); point-allow-overlap: true; }
 .iom.amenity[zoom>=17][amenity=waste_basket]{ point-file: url(./icons/amenity_waste_bin.n.20.png); point-allow-overlap: true; }
-/* New - Add Icons */
-.iom.amenity[zoom>=13][zoom<=14][amenity=school]{ point-file: url(./icons/education_school.p.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=hospital]{ point-file: url(./icons/health_hospital.p.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=fountain]{ point-file: url(./icons/amenity_fountain.p.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=tap]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=handwashing_station]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=waste_disposal]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=community_centre]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=social_centre]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=community_information_kiosk]{ point-file: url(./icons/info_kiosk.n.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=market]{ point-file: url(./icons/shopping_supermarket.p.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=street_light]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=shelter]{ point-file: url(./icons/accommodation_shelter.p.20.png); point-allow-overlap: true; }
-.iom.amenity[zoom>=13][zoom<=14][amenity=communal_cooking_area]{ point-file: url(./icons/communal_cooking.n.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=school]{ point-file: url(./icons/education_school.p.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=hospital]{ point-file: url(./icons/health_hospital.p.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=fountain]{ point-file: url(./icons/amenity_fountain.p.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=tap]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=handwashing_station]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=waste_disposal]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=community_centre]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=social_centre]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=community_information_kiosk]{ point-file: url(./icons/info_kiosk.n.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=market]{ point-file: url(./icons/shopping_supermarket.p.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=street_light]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=shelter]{ point-file: url(./icons/accommodation_shelter.p.20.png); point-allow-overlap: true; }
+.iom.amenity[zoom>=17][amenity=communal_cooking_area]{ point-file: url(./icons/communal_cooking.n.20.png); point-allow-overlap: true; }
 
-/* IOM - Barrier Low Zoom */
-.iom.barrier[zoom>=13][zoom<=14][barrier=ditch]{ point-file: url(./icons/barrier_ditch.p.20.png); point-allow-overlap: true; }
+/* IOM - Barrier High Zoom */
+.iom.barrier[zoom>=17][barrier=ditch]{ point-file: url(./icons/barrier_ditch.p.20.png); point-allow-overlap: true; }
 
-/* IOM - Hfac_Type Low Zoom */
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=specialized_hospital]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=hospital]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=field_hospital]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=clinic]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=cs_health_center]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=cal_health_center_with_beds]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=csl_health_center_without_beds]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=dispensary]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=other_type_of_health_facility]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
-.iom.hfac_type[zoom>=13][zoom<=14][hfac_type=unspecified]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
+/* IOM - Hfac_Type High Zoom */
+.iom.hfac_type[zoom>=17][hfac_type=specialized_hospital]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=17][hfac_type=hospital]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=17][hfac_type=field_hospital]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=17][hfac_type=clinic]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=17][hfac_type=cs_health_center]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=17][hfac_type=cal_health_center_with_beds]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=17][hfac_type=csl_health_center_without_beds]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=17][hfac_type=dispensary]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=17][hfac_type=other_type_of_health_facility]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
+.iom.hfac_type[zoom>=17][hfac_type=unspecified]{ point-file: url(./icons/health_hospital_emergency2.p.20.png); point-allow-overlap: true; }
 
-/* IOM Humanitarian Use - Low Zoom */
-.iom.humanitarian_use[zoom>=13][zoom<=14][humanitarian_use=oral_rehydration_centre]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
-.iom.humanitarian_use[zoom>=13][zoom<=14][humanitarian_use=cholera_treatement_unit]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
-.iom.humanitarian_use[zoom>=13][zoom<=14][humanitarian_use=cholera_treatement_centre]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
-.iom.humanitarian_use[zoom>=13][zoom<=14][humanitarian_use=disaster_shelter]{ point-file: url(./icons/accommodation_shelter.p.20.png); point-allow-overlap: true; }
+/* IOM Humanitarian Use - High Zoom */
+.iom.humanitarian_use[zoom>=17][humanitarian_use=oral_rehydration_centre]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+.iom.humanitarian_use[zoom>=17][humanitarian_use=cholera_treatement_unit]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+.iom.humanitarian_use[zoom>=17][humanitarian_use=cholera_treatement_centre]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+.iom.humanitarian_use[zoom>=17][humanitarian_use=disaster_shelter]{ point-file: url(./icons/accommodation_shelter.p.20.png); point-allow-overlap: true; }
 
-/* IOM Landuse - Low Zoom */
-.iom.landuse[zoom>=13][zoom<=14][landuse=landfill]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
-.iom.landuse[zoom>=13][zoom<=14][landuse=emergency_evacuation_area]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+/* IOM Landuse - High Zoom */
+.iom.landuse[zoom>=17][landuse=landfill]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+.iom.landuse[zoom>=17][landuse=emergency_evacuation_area]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
 
-/* IOM Man_made - Low Zoom */
-.iom.man_made[zoom>=13][zoom<=14][man_made=tank]{ point-file: url(./icons/watsan_tank.20.png); point-allow-overlap: true; }
-.iom.man_made[zoom>=13][zoom<=14][man_made=bladder]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
-.iom.man_made[zoom>=13][zoom<=14][man_made=water_well]{ point-file: url(./icons/watsan_well.20.png); point-allow-overlap: true; }
-.iom.man_made[zoom>=13][zoom<=14][man_made=borehole]{ point-file: url(./icons/watsan_borehole.20.png); point-allow-overlap: true; }
-.iom.man_made[zoom>=13][zoom<=14][man_made=dyke]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+/* IOM Man_made - High Zoom */
+.iom.man_made[zoom>=17][man_made=tank]{ point-file: url(./icons/watsan_tank.20.png); point-allow-overlap: true; }
+.iom.man_made[zoom>=17][man_made=bladder]{ point-file: url(./icons/blank.n.20.png); point-allow-overlap: true; }
+.iom.man_made[zoom>=17][man_made=water_well]{ point-file: url(./icons/watsan_well.20.png); point-allow-overlap: true; }
+.iom.man_made[zoom>=17][man_made=borehole]{ point-file: url(./icons/watsan_borehole.20.png); point-allow-overlap: true; }
+.iom.man_made[zoom>=17][man_made=dyke]{ point-file: url(./icons/transport_weir.p.20.png); point-allow-overlap: true; }
 
-/* IOM Natural - Low Zoom */
-.iom.natural[zoom>=13][zoom<=14][natural=spring]{ point-file: url(./icons/watsan_spring.20.png); point-allow-overlap: true; }
+/* IOM Natural - High Zoom */
+.iom.natural[zoom>=17][natural=spring]{ point-file: url(./icons/watsan_spring.20.png); point-allow-overlap: true; }
 
-/* IOM Office - Low Zoom */
-.iom.office[zoom>=13][zoom<=14][office=camp_resident_committee]{ point-file: url(./icons/camp_resident_committee.p.20.png); point-allow-overlap: true; }
+/* IOM Office - High Zoom */
+.iom.office[zoom>=17][office=camp_resident_committee]{ point-file: url(./icons/camp_resident_committee.p.20.png); point-allow-overlap: true; }
 
 /* IOM - Shop High Zoom */
 .iom.shop[zoom>=17][amenity=shop][shop=convenience]{ point-file: url(./icons/shopping_convenience.p.20.png); point-allow-overlap: true; }
