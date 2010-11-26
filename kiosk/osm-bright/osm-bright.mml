@@ -22,9 +22,7 @@
 
   # MK TODO:
   
-  * add polygon camp features
-  * remove OSM-Bright styling for cinemas and resturants
-  * see iom_points.mss for further todo-items.
+  * Add layers for landuse, man_made, natural, and office
 
 -->
 
@@ -486,9 +484,80 @@
       &db_info;
       <Parameter name="table"><![CDATA[
         ( SELECT * FROM planet_osm_point
-          WHERE "amenity" IN ('bar','cafe','drinking_water','doctors','place_of_worship','restaurant','shower','toilets','waste_basket')
+          WHERE "amenity" IN ('bar','cafe','drinking_water','doctors','place_of_worship','restaurant','shower','toilets','waste_basket','school','hospital','fountain','tap','handwashing_station','waste_disposal','community_centre','social_centre','community_information_kiosk','market','street_light','shelter','communal_cooking_area')
           ORDER BY z_order asc ) AS iom_amenity
       ]]></Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer class="iom barrier" srs="&srs900913;">
+    <Datasource>
+      &db_info;
+      <Parameter name="table"><![CDATA[
+        ( SELECT * FROM planet_osm_Point
+          WHERE "barrier" in ('ditch')
+          ORDER BY z_order asc ) AS iom_barrier]]>
+      </Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer class="iom hfac_type" srs="&srs900913;">
+    <Datasource>
+      &db_info;
+      <Parameter name="table"><![CDATA[
+        ( SELECT * FROM planet_osm_point
+          WHERE "hfac_type" in ('specialized_hospital','hospital','field_hospital','clinic','cs_health_center','cal_health_center_with_beds','cal_health_center_without_beds','dispensary','other_type_of_health_facility','unspecified' ) ) AS iom_hfac_type ]]>
+      </Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer class="iom humanitarian_use" srs="&srs900913;">
+    <Datasource>
+      &db_info;
+      <Parameter name="table"><![CDATA[
+        ( SELECT * FROM planet_osm_point
+          WHERE "humanitarian_use" in ('oral_rehydration_centre','cholera_treatement_unit','cholera_treatment_centre','disaster_shelter') ) AS iom_humanitarian_use ]]>
+      </Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer class="iom landuse" srs="&srs900913;">
+    <Datasource>
+      &db_info;
+      <Parameter name="table"><![CDATA[
+        ( SELECT * FROM planet_osm_point
+          WHERE "landuse" in ('landfill','emergency_evacuation_area') ) AS iom_landuse ]]>
+      </Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer class="iom man_made" srs="&srs900913;">
+    <Datasource>
+      &db_info;
+      <Parameter name="table"><![CDATA[
+        ( SELECT * FROM planet_osm_point
+          WHERE "man_made" in ('tank','bladder','water_well','borehole','dyke') ) AS iom_man_made ]]>
+      </Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer class="iom natural" srs="&srs900913;">
+    <Datasource>
+      &db_info;
+      <Parameter name="table"><![CDATA[
+        ( SELECT * FROM planet_osm_point
+          WHERE "natural" in ('spring') ) AS iom_natural ]]>
+      </Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer class="iom office" srs="&srs900913;">
+    <Datasource>
+      &db_info;
+      <Parameter name="table"><![CDATA[
+        ( SELECT * FROM planet_osm_point
+          WHERE "office" in ('camp_resident_committee') ) AS iom_office ]]>
+      </Parameter>
     </Datasource>
   </Layer>
 

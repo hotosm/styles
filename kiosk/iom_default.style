@@ -121,7 +121,7 @@ node,way name:fr                                   text  #osm2pgsql style
 node,way name:kr                                   text  #osm2pgsql style
 node,way natural                                   text    polygon  #osm2pgsql style
 node,way note                                      text    delete  #osm2pgsql style
-node,way office                                    text  #osm2pgsql style
+node,way office                                    text    polygon  #osm2pgsql style
 node,way oneway                                    text    linear  #osm2pgsql style
 node,way operational_status                        text  #osm2pgsql style
 node,way operator                                  text    linear  #osm2pgsql style
