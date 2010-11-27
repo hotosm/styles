@@ -67,6 +67,7 @@
   <Stylesheet src='road-label.mss' />   <!-- route labels -->
   <Stylesheet src='poi.mss' />          <!-- Points of interest, amenities, etc -->
   <Stylesheet src='iom_points_zoom_dep.mss' /> <!-- MK Mod for IOM Point Features -->
+  <Stylesheet src='iom_points_zoom_dep-label.mss' /> <!-- Labels for IOM POIs -->
 
   <!-- == Areas ============================================================ -->
   <!-- If using different shapefiles, modify path here -->
@@ -490,6 +491,24 @@
     </Datasource>
   </Layer>
 
+  <Layer class="iom amenity_label" srs="&srs900913;">
+    <Datasource>
+      &db_info;
+      <Parameter name="table"><![CDATA[
+        ( SELECT way,amenity,name,(CASE 
+          WHEN amenity='tap' THEN 'Tap'
+          WHEN amenity='handwashing_station' THEN 'Handwashing Station' 
+          WHEN amenity='waste_disposal' THEN 'Waste Disposal'
+          WHEN amenity='community_centre' THEN 'Community Centre'
+          WHEN amenity='social_centre' THEN 'Social Centre'
+          WHEN amenity='street_light' THEN 'Street Light' END) AS label 
+          FROM planet_osm_point
+          WHERE "amenity" IN ('bar','cafe','drinking_water','doctors','place_of_worship','restaurant','shower','toilets','waste_basket','school','hospital','fountain','tap','handwashing_station','waste_disposal','community_centre','social_centre','community_information_kiosk','market','street_light','shelter','communal_cooking_area')
+          ORDER BY z_order asc ) AS name
+      ]]></Parameter>
+    </Datasource>
+  </Layer>
+
   <Layer class="iom barrier" srs="&srs900913;">
     <Datasource>
       &db_info;
@@ -521,6 +540,22 @@
     </Datasource>
   </Layer>
 
+  <Layer class="iom humanitarian_use_label" srs="&srs900913;">
+    <Datasource>
+      &db_info;
+      <Parameter name="table"><![CDATA[
+        ( SELECT way,humanitarian_use,name,(CASE 
+          WHEN humanitarian_use='oral_rehydration_centre' THEN 'Oral Rehydration Centre'
+          WHEN humanitarian_use='cholera_treatment_unit' THEN 'Cholera Treatment Unit' 
+          WHEN humanitarian_use='cholera_treatment_centre' THEN 'Cholera Treatment Centre'
+          WHEN humanitarian_use='disaster_shelter' THEN 'Disaster Shelter' END) AS label 
+          FROM planet_osm_point
+          WHERE "humanitarian_use" in ('oral_rehydration_centre','cholera_treatement_unit','cholera_treatment_centre','disaster_shelter')
+          ORDER BY z_order asc ) AS name
+      ]]></Parameter>
+    </Datasource>
+  </Layer>
+
   <Layer class="iom landuse" srs="&srs900913;">
     <Datasource>
       &db_info;
@@ -528,6 +563,20 @@
         ( SELECT * FROM planet_osm_point
           WHERE "landuse" in ('landfill','emergency_evacuation_area') ) AS iom_landuse ]]>
       </Parameter>
+    </Datasource>
+  </Layer>
+
+  <Layer class="iom landuse_label" srs="&srs900913;">
+    <Datasource>
+      &db_info;
+      <Parameter name="table"><![CDATA[
+        ( SELECT way,landuse,name,(CASE 
+          WHEN landuse='landfill' THEN 'Landfill'
+          WHEN landuse='emergency_evacuation_area' THEN 'Emergency Evacuation Area' END) AS label 
+          FROM planet_osm_point
+          WHERE "landuse" in ('landfill','emergency_evacuation_area')
+          ORDER BY z_order asc ) AS name
+      ]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -540,6 +589,20 @@
       </Parameter>
     </Datasource>
   </Layer>
+
+  <Layer class="iom man_made_label" srs="&srs900913;">
+    <Datasource>
+      &db_info;
+      <Parameter name="table"><![CDATA[
+        ( SELECT way,man_made,name,(CASE 
+          WHEN man_made='bladder' THEN 'Bladder' END) AS label
+          FROM planet_osm_point
+          WHERE "man_made" in ('bladder')
+          ORDER BY z_order asc ) AS name
+      ]]></Parameter>
+    </Datasource>
+  </Layer>
+  
 
   <Layer class="iom natural" srs="&srs900913;">
     <Datasource>
